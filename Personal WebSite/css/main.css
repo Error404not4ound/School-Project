@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "Lato", sans-serif;
+  line-height: 1;
+}
+
+body {
+  overflow: hidden;
+  background-image: url('../img/background-image.png') !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-y: hidden !important;
+  background-position: left;
+}
+
+.sidebar {
+  display: inline-block;
+  min-height: 120vh;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 70px;
+  background-color: #313443;
+  float: left;
+}
+.sidebar li {
+  text-align: center;
+  color: white;
+}
+.sidebar ul li {
+  padding: 28px 0;
+  cursor: pointer;
+  transition: all ease-out 120ms;
+}
+.sidebar ul li i {
+  display: block;
+  font-size: 14px;
+  transition: all ease 450ms;
+}
+.sidebar ul li .lable {
+  display: inline-block;
+  position: absolute;
+  background-color: #313443;
+  padding: 8px 15px;
+  border-radius: 3px;
+  margin-top: -26px;
+  left: 90px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+.sidebar ul li .lable:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -4px;
+  top: 10px;
+  transform: rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background-color: inherit;
+}
+.sidebar ul li:hover {
+  background-color: #22252E;
+}
+.sidebar ul li:hover .lable {
+  visibility: visible;
+  opacity: 1;
+}
+.sidebar ul li.active {
+  background-color: #22252E;
+}
+.sidebar ul li.active i {
+  color: #98D7EC;
+}
+.in-container{
+  background-color: rgba(255, 255, 255, 0.658);
+  width: 100%;
+  margin: 20px;
+  border-radius: 10px;
+}
+.menu{
+  display: flex;
+  min-height: 30px;
+  border-bottom: 1px solid black;
+}
+.left{
+  display: flex;
+  width: 5%;
+  border-right: 1px solid black;
+  align-items: center;
+}
+.mid-1{
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.mid-2{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 50%;
+}
+.search{
+  margin-right: 10px;
+}
+.right{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-left: 1px solid black;
+  width: 5%;
+}
+.button{
+  cursor: pointer;
+  height: 24px;
+  width: auto;
+}
+.button:hover {
+  height: 23px;
+}
+.content {
+  width: 100%;
+  height: auto;
+  border: none;
+}
