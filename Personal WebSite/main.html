@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
     <head>
         <title>Sito personale</title>
         <meta charset="UTF-8">
@@ -17,16 +17,16 @@
     <div style="display:flex;height:100%;margin:0;padding:0;">
         <nav class="sidebar">
             <ul>
-                <li class="active"><button class="button" onClick="go('./pages/presentation.html')">Presentazione</button></li>
-                <li><button class="button" onClick="go('./pages/test')">Test</button></li>
-                <li><button class="button" onClick="go('./pages/#')">#</button></li>
-                <li><button class="button"><a href="./php/destroy.php">#</a></button></li>
+                <li></li>
+                <li style="background-color: #450047" class="active"><button class="button" style="padding: 52px 43.5px;" onClick="go('./pages/first.html')">Home</button></li>
+                <li style="background-color: #690060;"><button class="button" style="padding: 52px 43.5px;" onClick="go('./pages/second.html')">Percorso stage</button></li>
+                <li style="background-color: #f3a600;"><button class="button" style="padding: 52px 43.5px;" onClick="go('./pages/third.html')">Percorso scolastico</button></li>
+                <li style="background-color: #009cc4;"><button class="button" style="padding: 52px 43.5px;" onClick="go('./pages/fourth.html')">Tesina</button></li>
             </ul>
-            <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
             <script  src="./js/sidebar_script.js"></script>
         </nav>
         <div class="in-container">
-            <iframe src="./pages/presentation.html" style="width:100%;height:100%;overflow:scroll;" id="content" class="content"></iframe>
+            <iframe src="./pages/first.html" style="width:100%;height:100%;overflow:scroll;" id="content" class="content"></iframe>
         </div>
     </div>
     </body>
