@@ -11,22 +11,23 @@
             function go(loc) {
             document.getElementById('content').src = loc;
             }
-        </script> 
+        </script>
     </head>
     <body>
     <div style="display:flex;height:100%;margin:0;padding:0;">
         <nav class="sidebar">
             <ul>
-                <li></li>
-                <li style="background-color: #450047" class="active"><button class="button" style="padding: 52px 43.5px;" onClick="go('./pages/first.html')">Home</button></li>
-                <li style="background-color: #690060;"><button class="button" style="padding: 52px 43.5px;" onClick="go('./pages/second.html')">Percorso stage</button></li>
-                <li style="background-color: #f3a600;"><button class="button" style="padding: 52px 43.5px;" onClick="go('./pages/third.html')">Percorso scolastico</button></li>
-                <li style="background-color: #009cc4;"><button class="button" style="padding: 52px 43.5px;" onClick="go('./pages/fourth.html')">Tesina</button></li>
+                <li style="cursor:auto"><image class="logo" src="./img/VFrost.png"></image></li>
+                <li style="background-color: #450047" class="active"><button class="button" onClick="go('./pages/presentazione.html')">Home</button></li>
+                <li style="background-color: #690060"><button class="button" onClick="go('./pages/stage.html')">Percorso stage</button></li>
+                <li style="background-color: #f3a600"><button class="button" onClick="go('./pages/scuola.html')">Percorso scolastico</button></li>
+                <li style="background-color: #009cc4"><button class="button" onClick="go('./pages/tesina.html')">Tesina</button></li>
+                <li class="bottom"></li>
             </ul>
             <script  src="./js/sidebar_script.js"></script>
         </nav>
         <div class="in-container">
-            <iframe src="./pages/first.html" style="width:100%;height:100%;overflow:scroll;" id="content" class="content"></iframe>
+            <iframe src="./pages/presentazione.html" style="width:100%;height:100%;overflow:scroll;" id="content" class="content"></iframe>
         </div>
     </div>
     </body>

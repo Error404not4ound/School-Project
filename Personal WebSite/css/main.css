@@ -1,10 +1,14 @@
+/*main*/
 * {
   padding: 0;
   margin: 0;
   list-style: none;
   font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
 }
-
+html, body {
+  height: 100%;
+}
 body {
   overflow: hidden;
   background-image:url('../img/codescreen.png');
@@ -14,41 +18,39 @@ body {
   overflow-y: hidden !important;
   background-position: left;
 }
-
-    .sidebar {
-      display: inline-block;
-      min-height: 120vh;
-      margin: 0 !important;
-      padding: 0 !important;
-      width: 130px;
-      background-color: white;
-      float: left;
-    }
-    .sidebar li {
-      text-align: center;
-      color: white;
-    }
-    .sidebar ul li {
-      cursor: pointer;
-    }
-    /*.sidebar ul li:hover {
-      background-color: rgba(15, 13, 131, 0.836) !important;
-    }
-    .sidebar ul li.active {
-      background-color: #00000000;
-    }*/
+/*sidebar*/
+.sidebar {
+  display: inline-block;
+  width: 130px;
+  float: left;
+}
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar li {
+  text-align: center;
+  color: white;
+}
+/*sidebar content*/
+.logo{
+  width: 120px;
+}
 .button {
+  height: 120px;
+  width: 120px;
   border: none;
   text-align: center;
   color:white;
   text-decoration: none;
   font-size: 16px;
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: transparent;
 }
 .button:hover {
   background-color: rgba(0, 0, 0, 0.26);
-}   
+}
+/*iframe*/
 .in-container {
   background-color: rgba(255, 255, 255, 0);
   width: 100%;
